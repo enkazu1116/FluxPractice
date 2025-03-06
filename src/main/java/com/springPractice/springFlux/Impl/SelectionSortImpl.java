@@ -1,10 +1,17 @@
-package com.springPractice.springFlux.Service;
+package com.springPractice.springFlux.Impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+import com.springPractice.springFlux.Service.SelectionSort;
+
+
+@Service
 public class SelectionSortImpl implements SelectionSort {
     
     // 選択ソートを行うメソッド
+    @Override
     public List<Integer> selectionSort(List<Integer> list){
         for (int i = 0; i < list.size(); i++) {
             // 最小値のインデックスを保持するテンポラリ変数
