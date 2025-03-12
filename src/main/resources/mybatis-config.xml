@@ -4,22 +4,21 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
   <configuration>
     <!-- Mybatis本体の設定 -->
-    <enviroments default="development">
-        <enviroment id="development">
+    <environments default="development">
+        <environment id="development">
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
                 <property name="driver" value="org.postgresql.Driver" />
-                <property name="url" value="jdbc:postgresql://endouikki/fluxshop" />
+                <property name="url" value="jdbc:postgresql://localhost/fluxshop" />
                 <property name="username" value="endouikki" />
 				<property name="password" value="postgres" />
             </dataSource>
 
-        </enviroment>
-    </enviroments>
+        </environment>
+    </environments>
 
     <mappers>
-        <!-- ワイルドカードで指定する　--> 
-        <mapper resource="dao/*.xml" /> 
+        <mapper resource="mapper/PostMapper.xml" /> 
     </mappers>
 </configuration>
 

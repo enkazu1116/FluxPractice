@@ -1,9 +1,9 @@
-package com.springPractice.springFlux.Service;
+package com.springPractice.springFlux.service;
 
 import org.springframework.stereotype.Service;
 
-import com.springPractice.springFlux.Entity.PostEntity;
-import com.springPractice.springFlux.Mapper.PostMapper;
+import com.springPractice.springFlux.entity.PostEntity;
+import com.springPractice.springFlux.mapper.PostMapper;
 
 import lombok.RequiredArgsConstructor;
 
@@ -12,7 +12,7 @@ import lombok.RequiredArgsConstructor;
 public class PostService {
     private final PostMapper postMapper;
 
-    public PostEntity getPostById(Long id) {
+    public PostEntity getPostById(long id) {
         return postMapper.findById(id);
     }
 }

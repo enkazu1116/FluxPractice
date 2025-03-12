@@ -1,4 +1,4 @@
-package com.springPractice.springFlux.Entity;
+package com.springPractice.springFlux.entity;
 
 import lombok.Data;
 

@@ -3,7 +3,7 @@
 
 <mapper namespace="com.springPractice.springFlux.mapper.PostMapper">
  <!-- ID で取得 -->
-    <select id="findById" parameterType="long" resultType="com.springPractice.springFlux.entity.PostEntity">
+    <select id="findById" parameterType="Long" resultType="com.springPractice.springFlux.entity.PostEntity">
         SELECT * FROM post WHERE id = #{id}
     </select>
 </mapper>

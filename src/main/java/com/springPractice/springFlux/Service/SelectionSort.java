@@ -1,4 +1,4 @@
-package com.springPractice.springFlux.Service;
+package com.springPractice.springFlux.service;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package com.springPractice.springFlux.Impl;
+package com.springPractice.springFlux.impl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.springPractice.springFlux.Service.SelectionSort;
+import com.springPractice.springFlux.service.SelectionSort;
 
 
 @Service

@@ -1,15 +1,16 @@
-package com.springPractice.springFlux.Controller;
+package com.springPractice.springFlux.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springPractice.springFlux.Entity.PostEntity;
-import com.springPractice.springFlux.Service.PostService;
+import com.springPractice.springFlux.entity.PostEntity;
+import com.springPractice.springFlux.service.PostService;
 
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Flux;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
@@ -36,7 +37,7 @@ public class SampleRestContrller {
     }
     
     /* POSTを利用するリクエストハンドラを作成 */
-    @RequestMapping("/post/{id}")
+    @GetMapping("/post/{id}")
     public Mono<String> post(@PathVariable("id") long id){
         PostEntity post = postService.getPostById(id);
         return Mono.just(post.toString());
